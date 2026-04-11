@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genesis InfoWeb – Web & Mobile Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: system-ui, sans-serif;
+            background: #f3f4f6;
+            color: #111827;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #f8fafc;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .nav {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-weight: 700; font-size: 1.2rem; letter-spacing: 0.05em; }
+        nav a {
+            color: #e2e8f0;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        nav a:hover { color: #38bdf8; }
+        .btn-primary {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 10px 18px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .hero {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero h1 { font-size: 2.6rem; margin-bottom: 15px; color: #0f172a; }
+        .hero p { color: #475569; margin-bottom: 20px; }
+        .tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            margin-right: 6px;
+        }
+        .hero-card {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 24px;
+            border-radius: 18px;
+            box-shadow: 0 18px 40px rgba(15,23,42,0.4);
+        }
+        .section {
+            max-width: 1100px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+        }
+        .section h2 { font-size: 1.8rem; margin-bottom: 10px; }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            padding: 18px;
+            border-radius: 14px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        }
+        .card h3 { margin-bottom: 8px; }
+        .pill {
+            background: #f1f5f9;
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            margin-right: 6px;
+        }
+        .contact {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 24px;
+            border-radius: 18px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            background: #020617;
+            color: #e2e8f0;
+        }
+        .btn-secondary {
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 10px 14px;
+            border-radius: 999px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+        @media(max-width:900px){
+            .hero, .contact { grid-template-columns: 1fr; }
+        }
+        @media(max-width:640px){
+            .grid-3 { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav">
+        <div class="logo">Genesis InfoWeb</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#web">Web</a>
+            <a href="#mobile">Mobile</a>
+            <a href="#contact" class="btn-primary">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>We Build Modern Web & Mobile Solutions</h1>
+        <p>Genesis InfoWeb delivers fast, scalable and secure digital products for startups and enterprises.</p>
+        <span class="tag">Web Development</span>
+        <span class="tag">Mobile Apps</span>
+        <span class="tag">IT Startup Solutions</span>
+        <br><br>
+        <a href="#contact" class="btn-primary">Start Your Project</a>
+    </div>
+
+    <div class="hero-card">
+        <h3>Why Genesis InfoWeb?</h3>
+        <p>We help you plan, design and build high‑quality digital products from scratch.</p>
+        <p>✔ Web Apps  
+           ✔ Mobile Apps  
+           ✔ Startup MVPs</p>
+    </div>
+</section>
+
+<section id="services" class="section">
+    <h2>Our Services</h2>
+    <p>We provide end‑to‑end development for web and mobile platforms.</p>
+
+    <div class="grid-3">
+        <div class="card">
+            <h3>Product Strategy</h3>
+            <p>We help you define features, roadmap and architecture.</p>
+            <span class="pill">MVP</span>
+            <span class="pill">Consulting</span>
+        </div>
+
+        <div class="card" id="web">
+            <h3>Web Development</h3>
+            <p>Responsive, SEO‑friendly websites and web apps.</p>
+            <span class="pill">Landing Pages</span>
+            <span class="pill">Dashboards</span>
+            <span class="pill">SaaS</span>
+        </div>
+
+        <div class="card" id="mobile">
+            <h3>Mobile Development</h3>
+            <p>Android & iOS apps with a single codebase.</p>
+            <span class="pill">Cross‑platform</span>
+            <span class="pill">API Integration</span>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="contact">
+        <div>
+            <h2>Contact Genesis InfoWeb</h2>
+            <p>Tell us about your project and we’ll get back within 24 hours.</p>
+        </div>
+
+        <form onsubmit="submitForm(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Project Type (Web, Mobile, Both)" required>
+            <textarea placeholder="Project Details"></textarea>
+            <button class="btn-secondary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © <span id="year"></span> Genesis InfoWeb – All Rights Reserved
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function submitForm(e){
+        e.preventDefault();
+        alert("Thank you! Your message has been received.");
+        e.target.reset();
+    }
+</script>
+
+</body>
+</html>
